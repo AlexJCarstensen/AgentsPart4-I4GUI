@@ -39,7 +39,8 @@
                  Margin="120, 15, 0 , 0"
                  Width="40"
                  Style="{StaticResource BondStyle}"
-                 Text="{Binding Path=ID}"></TextBox>
+                 Text="{Binding Path=ID}"
+                 Name="txbID"></TextBox>
         <TextBox VerticalAlignment="Top"
                  HorizontalAlignment="Left"
                  Margin="120, 55, 0 , 0"
@@ -64,12 +65,14 @@
                 HorizontalAlignment="Left"
                 Margin="115, 235, 0 , 0"
                 Content="_Ok"
-                Style="{StaticResource ButtonToolbarStyle}"></Button>
+                Style="{StaticResource ButtonToolbarStyle}"
+                Click="ButtonBase_Onclick"></Button>
         <Button VerticalAlignment="Top"
                 HorizontalAlignment="Left"
                 Margin="185, 235, 0 , 0"
                 Content="_Cancel"
-                Style="{StaticResource ButtonToolbarStyle}"></Button>
+                Style="{StaticResource ButtonToolbarStyle}"
+                IsCancel="true"></Button>
 
     </Grid>
 </Window>

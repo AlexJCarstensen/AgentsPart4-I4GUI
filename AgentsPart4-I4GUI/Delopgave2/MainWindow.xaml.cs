@@ -22,11 +22,14 @@ namespace Delopgave2
     /// </summary>
     public partial class MainWindow : Window
     {
+        
+    
         DispatcherTimer timer = new DispatcherTimer();
         Clock clock = new Clock();
         public MainWindow()
         {
             InitializeComponent();
+            
 
             spClock.DataContext = clock;
             timer.Interval = TimeSpan.FromSeconds(1);
@@ -68,7 +71,6 @@ namespace Delopgave2
                 }
             }
         }
-
-
+        
     }
 }

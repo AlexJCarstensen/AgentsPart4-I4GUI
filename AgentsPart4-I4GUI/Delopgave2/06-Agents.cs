@@ -210,14 +210,17 @@ namespace Delopgave2
         }
 
         private ICommand _editCommand;
-        public ICommand EditCommand => _colorCommand ?? (_editCommand = new RelayCommand(EditAgentCommand_Excute));
+        public ICommand EditCommand => _editCommand ?? (_editCommand = new RelayCommand(EditAgentCommand_Execute));
 
-        private void EditAgentCommand_Excute()
+        private void EditAgentCommand_Execute()
         {
+            EditAgentWindow dlg = new EditAgentWindow();
+            dlg.DataContext = this;
+            dlg.ShowDialog();
             
         }
 
-        #endregion //Commands
+       #endregion //Commands
 
 #region Properties
 

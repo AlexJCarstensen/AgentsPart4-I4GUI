@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,9 +20,19 @@ namespace Delopgave2
     /// </summary>
     public partial class EditAgentWindow : Window
     {
+        
         public EditAgentWindow()
         {
             InitializeComponent();
         }
+
+        private void ButtonBase_Onclick(object sender, RoutedEventArgs e)
+        {
+            
+            DialogResult = true;
+
+        }
+
+        
     }
 }

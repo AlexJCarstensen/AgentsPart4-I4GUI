@@ -172,7 +172,9 @@
                     HorizontalAlignment="Left"
                     Margin="15, 150, 0, 0"
                     Content="Edit"
-                    Style="{StaticResource ButtonToolbarStyle}"></Button>
+                    Name="btnEdit"
+                    Style="{StaticResource ButtonToolbarStyle}"
+                    Command="{Binding EditCommand}"></Button>
 
             <TextBox Grid.Column="0"
                      VerticalAlignment="Top"
