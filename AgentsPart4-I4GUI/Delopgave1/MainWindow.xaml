@@ -217,7 +217,8 @@
                      SelectedIndex="{Binding Path=CurrentIndex}"
                      SelectedItem="{Binding Path=CurrentAgent}"
                      IsSynchronizedWithCurrentItem="True"
-                     ItemTemplate="{StaticResource agentTemplate}"></DataGrid>
+                     ItemTemplate="{StaticResource agentTemplate}"
+                     IsReadOnly="True"></DataGrid>
         </Grid>
         <StatusBar DockPanel.Dock="Bottom">
             <StatusBarItem Content="Agents Count: "></StatusBarItem>
