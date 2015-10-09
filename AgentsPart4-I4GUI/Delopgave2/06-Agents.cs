@@ -209,6 +209,14 @@ namespace Delopgave2
             Application.Current.MainWindow.Resources["myBrush"] = newBrush;
         }
 
+        private ICommand _editCommand;
+        public ICommand EditCommand => _colorCommand ?? (_editCommand = new RelayCommand(EditAgentCommand_Excute));
+
+        private void EditAgentCommand_Excute()
+        {
+            
+        }
+
         #endregion //Commands
 
 #region Properties

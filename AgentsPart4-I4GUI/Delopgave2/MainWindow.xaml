@@ -166,8 +166,13 @@
                    HorizontalAlignment="Left"
                    Margin="10, 90, 0, 0"
                    Content="Assignment"></Label>
-
-
+            
+            <Button Grid.Column="0"
+                    VerticalAlignment="Top"
+                    HorizontalAlignment="Left"
+                    Margin="15, 150, 0, 0"
+                    Content="Edit"
+                    Style="{StaticResource ButtonToolbarStyle}"></Button>
 
             <TextBox Grid.Column="0"
                      VerticalAlignment="Top"
@@ -176,7 +181,8 @@
                      x:Name="txbID"
                      Width="50"
                      Text="{Binding Path=ID}"
-                     Style="{StaticResource BondStyle}"></TextBox>
+                     Style="{StaticResource BondStyle}"
+                     IsReadOnly="True"></TextBox>
             <TextBox Grid.Column="0"
                      VerticalAlignment="Top"
                      HorizontalAlignment="Left"
@@ -184,25 +190,30 @@
                      Name="txbCodeName"
                      Width="120"
                      Text="{Binding Path=CodeName}"
-                     Style="{StaticResource TextboxStyle}"></TextBox>
+                     Style="{StaticResource TextboxStyle}"
+                     IsReadOnly="True"></TextBox>
 
-            <ComboBox Grid.Column="0"
-                      VerticalAlignment="Top"
-                      HorizontalAlignment="Left"
-                      Margin="100, 62, 0, 0"
-                      Name="txbSpeciality"
-                      Width="120"
-                      SelectedItem="{Binding Path=Speciality}"
-                      ItemsSource="{Binding Source={StaticResource SpecialityChoice}}"></ComboBox>
+           <TextBox Grid.Column="0"
+                    VerticalAlignment="Top"
+                    HorizontalAlignment="Left"
+                    Margin="100, 62, 0, 0"
+                    Name="txbSpeciality"
+                    Width="120"
+                    Text="{Binding Path=Speciality}"
+                    IsReadOnly="True"></TextBox>
+                    <!-- SelectedItem="{Binding Path=Speciality}"
+                    ItemsSource="{Binding Source={StaticResource SpecialityChoice}}"-->
+                      
 
-            <TextBox Grid.Column="0"
-                     VerticalAlignment="Stretch"
-                     HorizontalAlignment="Left"
-                     Margin="100, 92, 0, 0"
-                     Name="txbAssignment"
-                     Width="120"
-                     Text="{Binding Path=Assignment}"
-                     Style="{StaticResource TextboxStyle}"></TextBox>
+           <TextBox Grid.Column="0"
+                    VerticalAlignment="Stretch"
+                    HorizontalAlignment="Left"
+                    Margin="100, 92, 0, 0"
+                    Name="txbAssignment"
+                    Width="120"
+                    Text="{Binding Path=Assignment}"
+                    Style="{StaticResource TextboxStyle}"
+                    IsReadOnly="True"></TextBox>
 
 
 
